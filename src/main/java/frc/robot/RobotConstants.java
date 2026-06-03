@@ -2,7 +2,7 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.RobotBase;
 
-public class Constants {
+public class RobotConstants {
     public static final Mode simMode = Mode.SIM;
     public static final Mode currentMode = RobotBase.isReal() ? Mode.REAL : simMode;
 

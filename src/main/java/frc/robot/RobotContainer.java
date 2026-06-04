@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import frc.robot.subsystems.feeder.Feeder;
+import frc.robot.subsystems.floor.Floor;
 import frc.robot.subsystems.intake.Intake;
 
 public class RobotContainer {
@@ -15,6 +16,7 @@ public class RobotContainer {
   private final CommandXboxController operatorController;
 
   private final Intake intake;
+  private final Floor floor;
   private final Feeder feeder;
 
   public RobotContainer() {
@@ -22,6 +24,7 @@ public class RobotContainer {
     this.operatorController = new CommandXboxController(RobotConstants.OPERATOR_CONTROLLER_PORT);
 
     this.intake = new Intake();
+    this.floor = new Floor();
     this.feeder = new Feeder();
 
     configureBindings();

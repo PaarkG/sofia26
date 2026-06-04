@@ -42,7 +42,7 @@ import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine;
 import frc.robot.RobotConstants;
 import frc.robot.RobotConstants.Mode;
 import frc.robot.generated.TunerConstants;
-import frc.robot.utils.pathplanning.LocalADStarAK;
+import frc.robot.lib.pathplanning.LocalADStarAK;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import org.littletonrobotics.junction.AutoLogOutput;
